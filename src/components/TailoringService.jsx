@@ -4,7 +4,7 @@ import '../css/service.css';
 const TailoringService = () => {
   return (
     <>
-      {/* Preloader Start */}
+      {/* Preloader Start
       <div id="preloader-active">
         <div className="preloader d-flex align-items-center justify-content-center">
           <div className="preloader-inner position-relative">
@@ -14,7 +14,7 @@ const TailoringService = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       {/* Preloader End */}
 
     
@@ -27,7 +27,8 @@ const TailoringService = () => {
 
 
         {/* Clients Offers Start */}
-        <div className="clients-area section-padding40">
+
+      
           <div className="container">
             <div className="row">
               {[
@@ -50,7 +51,7 @@ const TailoringService = () => {
               ))}
             </div>
           </div>
-        </div>
+        
         {/* Clients Offers End */}
 
         {/* Video Start */}
