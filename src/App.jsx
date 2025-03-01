@@ -5,13 +5,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import Header from './components/Header'
 import TopComopents from './components/TopComopents'
+import TailoringService from './components/TailoringService'
 
 function App() {
 
   return (
     <>
+    
       <TopComopents />
      <Header />
+    <TailoringService />
+
    
     </>
   )

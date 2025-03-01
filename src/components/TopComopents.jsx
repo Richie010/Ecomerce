@@ -20,13 +20,12 @@ const TopComopents = () => {
         </div>
       </div>
       <nav className="nav-links">
-        <a href="#">Coat & Suit Blazers</a>
-        <a href="#">Clothing</a>
-        <a href="#">Home & Living</a>
-        <a href="#">Wedding & Party</a>
-        <a href="#">Uniforms</a>
-        <a href="#">Art & Collectibles</a>
-        <a href="#">Safari & Mens</a>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Products</a>
+        <a href="#">Service</a>
+        <a href="#">Contact</a>
+      
       </nav>
     </header>
   );
