@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/style.css"; // Ensure CSS is linked
+import "../css/style.css"; 
 
 const Header = () => {
   return (
@@ -17,7 +17,7 @@ const Header = () => {
           <img
             className="fashion-image"
             alt="Fashion Model"
-            src="../src/assets/hedar.jpg" // Ensure correct path
+            src="../src/assets/hedar.jpg" 
           />
         </div>
       </div>

@@ -1,7 +1,7 @@
 import React from "react";
 import { FaSearch, FaUser, FaShoppingBag } from "react-icons/fa";
-import "../css/header.css"; // Ensure this CSS file exists
-import logo from "../assets/logo.jpeg"; // Add your logo in the 'assets' folder
+import "../css/header.css"; 
+import logo from "../assets/logo.jpeg"; 
 
 const TopComopents = () => {
   return (

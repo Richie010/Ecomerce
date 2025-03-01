@@ -20,13 +20,13 @@ const TailoringService = () => {
     
 
       <main>
-        {/* Slider Area Start */}
+    
       
           
                
 
 
-        {/* Clients Offers Start */}
+     
 
       
           <div className="container">
@@ -52,9 +52,7 @@ const TailoringService = () => {
             </div>
           </div>
         
-        {/* Clients Offers End */}
-
-        {/* Video Start */}
+      
         <div className="video-area section-bg2 d-flex align-items-center"
           style={{ backgroundImage: "url('assets/img/gallery/video-bg.png')" }}>
           <div className="container">
@@ -67,9 +65,7 @@ const TailoringService = () => {
             </div>
           </div>
         </div>
-        {/* Video End */}
-
-        {/* Services Area Start */}
+      
         <section className="categories-area section-padding40">
           <div className="container">
             <div className="row justify-content-center">
@@ -102,7 +98,7 @@ const TailoringService = () => {
             </div>
           </div>
         </section>
-        {/* Services Area End */}
+      
       </main>
     </>
   );

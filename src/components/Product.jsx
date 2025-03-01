@@ -5,7 +5,7 @@ const ProductsPage = () => {
   return (
     <>
       <main>
-        {/* Products Showcase Start */}
+       
         <div className="container">
           <div className="row">
             {[
@@ -20,7 +20,7 @@ const ProductsPage = () => {
                     <img src={`../src/assets/${product.img}`} alt={product.title} />
                   </div>
                   <div className="product-cap">
-                    <h3><a href="products.html">{product.title}</a></h3>
+                    <h3><a href="#">{product.title}</a></h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique.</p>
                   </div>
                 </div>
@@ -28,7 +28,7 @@ const ProductsPage = () => {
             ))}
           </div>
         </div>
-        {/* Products Showcase End */}
+     
 
         Why Choose Our Products Section
         <section className="features-area section-padding40">
@@ -63,7 +63,6 @@ const ProductsPage = () => {
             </div>
           </div>
         </section>
-        {/* Why Choose Our Products End */}
       </main>
     </>
   );
