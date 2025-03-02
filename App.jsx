@@ -11,10 +11,10 @@ function App() {
     <Router>
       <TopComopents />
       <Routes>
-        <Route path="#/" element={<Header />} />
-        <Route path="#/about" element={<TailoringService />} />
-        <Route path="#/products" element={<Product />} />
-        <Route path="#/abouts" element={<FashionGallery />} />
+        <Route path="/" element={<Header />} />
+        <Route path="/about" element={<TailoringService />} />
+        <Route path="/products" element={<Product />} />
+        <Route path="/abouts" element={<FashionGallery />} />
       </Routes>
       <Footer />
     </Router>
