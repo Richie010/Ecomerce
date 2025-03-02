@@ -15,7 +15,7 @@ const TailoringService = () => {
                 <div key={index} className="col-lg-4 col-md-6 col-sm-6">
                   <div className="single-offers mb-50 wow fadeInUp" data-wow-delay={offer.delay}>
                     <div className="offers-img">
-                      <img src={`../src/assets/${offer.img}`} alt={offer.title} />
+                      <img src={new URL(`../assets/${offer.img}`, import.meta.url).href} alt={offer.title} />
                     </div>
                     <div className="offers-cap">
                       <span>{index + 1}</span>
@@ -91,7 +91,7 @@ const TailoringService = () => {
                   <div key={index} className="col-lg-3 col-md-6 col-sm-6">
                     <div className="single-cat mb-50 wow fadeInUp" data-wow-duration="1s" data-wow-delay={service.delay}>
                       <div className="cat-icon">
-                        <img src={`../src/assets/${service.img}`} alt={service.title} />
+                        <img src={new URL(`../assets/${service.img}`, import.meta.url).href} alt={service.title} />
                       </div>
                       <div className="cat-cap">
                         <h5>{service.title}</h5>

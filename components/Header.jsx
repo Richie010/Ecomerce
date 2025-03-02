@@ -131,7 +131,7 @@ const Header = () => {
 
       {/* Fashion Model Image */}
       <div className="container text-center my-5">
-        <img className="img-fluid" src="../src/assets/homme.jpg" alt="Fashion Model" />
+        <img className="img-fluid" src="/assets/homme.jpg" alt="Fashion Model" />
       </div>
 
       {/* Featured Products */}
