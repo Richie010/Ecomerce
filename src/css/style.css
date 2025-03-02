@@ -80,6 +80,12 @@
 .fashion-image:hover {
     transform: scale(1.02);
 }
+.img-fluid{
+    max-width: 100%;
+    height: 300px;
+    width: 1200px;
+    border-radius: 20px;
+}
 
 /* Responsive Design */
 @media (max-width: 992px) {

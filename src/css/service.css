@@ -3,7 +3,10 @@ body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    width: 100%;
+    
+   
+    background-color: #f9f9f9;
 }
 
 /* Preloader */
