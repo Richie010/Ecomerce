@@ -28,21 +28,21 @@ const Header = () => {
 
         {/* Moving Image Carousel */}
         <div className="col-md-6">
-          <Carousel>
-            <Carousel.Item>
-              <img className="carousel-img" src="../src/assets/fasion3.jpeg" alt="Fashion 1" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousel-img" src="../src/assets/fasion2.jpeg" alt="Fashion 2" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousel-img" src="../src/assets/fasion5.jpeg" alt="Fashion 3" />
-            </Carousel.Item>
-            <Carousel.Item>
-              <img className="carousel-img" src="../src/assets/fasion4.jpeg" alt="Uniform Collection" />
-            </Carousel.Item>
-           
-          </Carousel>
+        <Carousel>
+          <Carousel.Item>
+            <img className="carousel-img" src={`${import.meta.env.BASE_URL}assets/fasion3.jpeg`} alt="Fashion 1" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="carousel-img" src={`${import.meta.env.BASE_URL}assets/fasion2.jpeg`} alt="Fashion 2" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="carousel-img" src={`${import.meta.env.BASE_URL}assets/fasion5.jpeg`} alt="Fashion 3" />
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="carousel-img" src={`${import.meta.env.BASE_URL}assets/fasion4.jpeg`} alt="Uniform Collection" />
+          </Carousel.Item>
+        </Carousel>
+
         </div>
       </div>
       {/* <div className="img-fluid"> */}
