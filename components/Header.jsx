@@ -1,7 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
-import { FaShippingFast, FaHeadset, FaTags, FaTshirt, FaShoppingBag, FaGem,FaWhatsapp } from "react-icons/fa";
+import { FaShippingFast, FaHeadset, FaTags, FaTshirt, FaShoppingBag, FaGem, FaWhatsapp } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import "../css/style.css";
 
@@ -28,48 +28,49 @@ const Header = () => {
 
         {/* Moving Image Carousel */}
         <div className="col-md-6">
-        <Carousel>
-          <Carousel.Item>
-            <img className="carousel-img" src={`${import.meta.env.BASE_URL}assets/fasion3.jpeg`} alt="Fashion 1" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="carousel-img" src={`${import.meta.env.BASE_URL}assets/fasion2.jpeg`} alt="Fashion 2" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="carousel-img" src={`${import.meta.env.BASE_URL}assets/fasion5.jpeg`} alt="Fashion 3" />
-          </Carousel.Item>
-          <Carousel.Item>
-            <img className="carousel-img" src={`${import.meta.env.BASE_URL}assets/fasion4.jpeg`} alt="Uniform Collection" />
-          </Carousel.Item>
-        </Carousel>
+          <Carousel>
+            <Carousel.Item>
+              <img className="carousel-img" src="/assets/fasion3.jpeg" alt="Fashion 1" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="carousel-img" src="/assets/fasion2.jpeg" alt="Fashion 2" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="carousel-img" src="/assets/fasion5.jpeg" alt="Fashion 3" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="carousel-img" src="/assets/fasion4.jpeg" alt="Uniform Collection" />
+            </Carousel.Item>
+          </Carousel>
+
 
         </div>
       </div>
       {/* <div className="img-fluid"> */}
       <Carousel>
-      {/* <div className="container text-center my-5"> */}
-      
-     
-      <Carousel.Item>
-        <img className="img-fluid" src="../src/assets/schoolall.webp" alt="Fashion Model" />
+        {/* <div className="container text-center my-5"> */}
+
+
+        <Carousel.Item>
+          <img className="img-fluid" src="../src/assets/schoolall.webp" alt="Fashion Model" />
         </Carousel.Item>
 
         <Carousel.Item>
-              <img className="img-fluid " src="../src/assets/school1.jpg" alt="Fashion 1" />
-         </Carousel.Item>
-         
-      <Carousel.Item>
-        <img className="img-fluid" src="../src/assets/scholset.jpeg" alt="Fashion 4" />
+          <img className="img-fluid " src="../src/assets/school1.jpg" alt="Fashion 1" />
+        </Carousel.Item>
+
+        <Carousel.Item>
+          <img className="img-fluid" src="../src/assets/scholset.jpeg" alt="Fashion 4" />
         </Carousel.Item>
         <Carousel.Item>
-              <img className="img-fluid " src="../src/assets/hedar1.jpg" alt="Fashion 2" />
-         </Carousel.Item>
-         
-      <Carousel.Item>
-        <img className="img-fluid" src="../src/assets/schoolall.webp" alt="Fashion 3" />
+          <img className="img-fluid " src="../src/assets/hedar1.jpg" alt="Fashion 2" />
         </Carousel.Item>
-       
-    
+
+        <Carousel.Item>
+          <img className="img-fluid" src="../src/assets/schoolall.webp" alt="Fashion 3" />
+        </Carousel.Item>
+
+
       </Carousel>
 
       <div className="whatsapp-icon" style={{ position: "fixed", bottom: "20px", right: "20px", zIndex: "1000", animation: "vibrate 1s infinite" }}>
