@@ -1,7 +1,8 @@
 import React from "react";
 import { FaUser, FaShoppingBag, FaInfoCircle, FaBoxOpen, FaCogs, FaPhone } from "react-icons/fa";
 import "../css/header.css"; 
-import logo from "/assets/logo.jpeg"; 
+<img src="/assets/logo.jpeg" alt="Logo" />
+
 
 const TopComponents = () => {
   return (
