@@ -52,22 +52,22 @@ const Header = () => {
 
 
         <Carousel.Item>
-          <img className="img-fluid" src="../src/assets/schoolall.webp" alt="Fashion Model" />
+          <img className="img-fluid" src="/assets/schoolall.webp" alt="Fashion Model" />
         </Carousel.Item>
 
         <Carousel.Item>
-          <img className="img-fluid " src="../src/assets/school1.jpg" alt="Fashion 1" />
+          <img className="img-fluid " src="/assets/school1.jpg" alt="Fashion 1" />
         </Carousel.Item>
 
         <Carousel.Item>
-          <img className="img-fluid" src="../src/assets/scholset.jpeg" alt="Fashion 4" />
+          <img className="img-fluid" src="/assets/scholset.jpeg" alt="Fashion 4" />
         </Carousel.Item>
         <Carousel.Item>
-          <img className="img-fluid " src="../src/assets/hedar1.jpg" alt="Fashion 2" />
+          <img className="img-fluid " src="/assets/hedar1.jpg" alt="Fashion 2" />
         </Carousel.Item>
 
         <Carousel.Item>
-          <img className="img-fluid" src="../src/assets/schoolall.webp" alt="Fashion 3" />
+          <img className="img-fluid" src="/assets/schoolall.webp" alt="Fashion 3" />
         </Carousel.Item>
 
 
@@ -131,7 +131,7 @@ const Header = () => {
 
       {/* Fashion Model Image */}
       <div className="container text-center my-5">
-        <img className="img-fluid" src="../src/assets/homme.jpg" alt="Fashion Model" />
+        <img className="img-fluid" src="/assets/homme.jpg" alt="Fashion Model" />
       </div>
 
       {/* Featured Products */}

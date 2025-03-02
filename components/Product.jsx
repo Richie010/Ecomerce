@@ -2,18 +2,18 @@ import React from "react";
 import '../css/product.css';
 
 // Import images from src/assets
-import schoolpants from "../assets/school-pants.jpg";
-import schoolshorts from "../assets/school-shorts.jpeg";
-import girlsuniform from "../assets/girls-uniform.jpg";
-import schoolskirt from "../assets/school-skirt.jpg";
-import blazer from "../assets/blazers.jpg";
-import blazerwomen from "../assets/blazer-women.jpg";
-import coatsuitformal from "../assets/coat suit formal.jpg";
-import wedingoats from "../assets/wedingcoats.jpg";
-import pants from "../assets/pants.jpg";
-import shirts from "../assets/shirt.jpg";
-import formalpant from "../assets/formalpants.jpeg";
-import formalshirt from "../assets/formalshirts.jpg";
+import schoolpants from "/assets/school-pants.jpg";
+import schoolshorts from "/assets/school-shorts.jpeg";
+import girlsuniform from "/assets/girls-uniform.jpg";
+import schoolskirt from "/assets/school-skirt.jpg";
+import blazer from "/assets/blazers.jpg";
+import blazerwomen from "/assets/blazer-women.jpg";
+import coatsuitformal from "/assets/coat suit formal.jpg";
+import wedingoats from "/assets/wedingcoats.jpg";
+import pants from "/assets/pants.jpg";
+import shirts from "/assets/shirt.jpg";
+import formalpant from "/assets/formalpants.jpeg";
+import formalshirt from "/assets/formalshirts.jpg";
 import { FaWhatsapp } from "react-icons/fa"
 
 
