@@ -2,27 +2,18 @@ import React from "react";
 import '../css/product.css';
 
 // Import images from src/assets
-<img src="/assets/school-pants.jpg" alt="school-pants" />;
-<img src="/assets/school-shorts.jpeg" alt="school-shorts" />;
-<img src="/assets/girls-uniform.jpg" alt="girls-uniform" />;
-<img src="/assets/school-skirt.jpg" alt="school-skirt" />;
-<img src="/assets/blazers.jpg" alt="blazers" />;
-<img src="/assetsblazer-women.jpg" alt="blazer-women" />
-
-
-
-// import schoolpants from "/assets/school-pants.jpg";
-// import schoolshorts from "/assets/school-shorts.jpeg";
-// import girlsuniform from "/assets/girls-uniform.jpg";
-// import schoolskirt from "/assets/school-skirt.jpg";
-// import blazer from "/assets/blazers.jpg";
-// import blazerwomen from "/assets/blazer-women.jpg";
-// import coatsuitformal from "/assets/coat suit formal.jpg";
-// import wedingoats from "/assets/wedingcoats.jpg";
-// import pants from "/assets/pants.jpg";
-// import shirts from "/assets/shirt.jpg";
-// import formalpant from "/assets/formalpants.jpeg";
-// import formalshirt from "/assets/formalshirts.jpg";
+import schoolpants from "../assets/school-pants.jpg";
+import schoolshorts from "../assets/school-shorts.jpeg";
+import girlsuniform from "../assets/girls-uniform.jpg";
+import schoolskirt from "../assets/school-skirt.jpg";
+import blazer from "../assets/blazers.jpg";
+import blazerwomen from "../assets/blazer-women.jpg";
+import coatsuitformal from "../assets/coat suit formal.jpg";
+import wedingoats from "../assets/wedingcoats.jpg";
+import pants from "../assets/pants.jpg";
+import shirts from "../assets/shirt.jpg";
+import formalpant from "../assets/formalpants.jpeg";
+import formalshirt from "../assets/formalshirts.jpg";
 import { FaWhatsapp } from "react-icons/fa"
 
 

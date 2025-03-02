@@ -1,7 +1,7 @@
 import React from "react";
-<img src="/assets/coat.jpg" alt="school-pants" />;
-<img src="/assets/school.jpg" alt="school-pants" />;
-<img src="/assets/college.jpg" alt="school-pants" />;
+import coat from "../assets/coat.jpg";
+import schoolUniforms from "../assets/school.jpg";
+import college from '../assets/college.jpg';
 import '../css/about.css';  // Make sure you create/update this CSS file
 import { FaWhatsapp } from "react-icons/fa"
 
