@@ -1,144 +1,106 @@
-/* Header container */
+/* General Styles */
 .header {
-    /* background-color: white; */
-    padding: 10px 20px;
-   
-    justify-content: space-between;
-    align-items: center;
-    border-bottom: 2px solid #ddd;
-  }
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
 
-  .carousel-img {
-    width: 100%;
-    height: auto;
-    border-radius: 20px; /* Curved edges */
-    object-fit: cover; /* Ensures images fit well */
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Soft shadow for a sleek look */
-  }
-/* Top section */
 .header-top {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 20px; /* Reduced padding */
-    height: 50px; /* Adjusted height */
-  
-    padding: 5px 15px;
-
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
-/* Logo container */
+
 .logo-container {
-    display: flex;
-    align-items: center;
-  }
-/* Logo image */
+  display: flex;
+  align-items: center;
+}
+
 .logo-img {
-    width: 50px; /* Adjust size as needed */
-    height: 50px;
-    border-radius: 50%;
-    margin-right: 10px;
-  }
-  .logo-text {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333; /* Dark gray */
-  }
-  
-/* Logo */
-.logo {
-    font-size: 28px;
-    font-weight: bold;
-    color: #222;
-    font-family: 'Playfair Display', serif;
-    letter-spacing: 1px;
-    cursor: pointer;
-    transition: color 0.3s ease;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
-.logo:hover {
-    color: #555;
+.logo-text {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: white;
+  letter-spacing: 1px;
 }
 
+/* Navbar Icons */
 .header-icons {
-    display: flex;
-    gap: 20px;
-  }
-  
-/* Icons */
-.header-icons {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 20px;
 }
 
 .icon-text {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .icon-text a {
-    text-decoration: none;
-    color: black; /* Changes default blue to black */
-    font-weight: bold;
-  }
-  .icon-text a:hover {
-    color: #ff5733; /* Attractive hover effect */
-  }
-  
-
-.icon-text:hover {
-    color: #000;
-    transform: translateY(-2px);
+  display: flex;
+  align-items: center;
+  gap: 8px;
 }
 
 .icon {
-    font-size: 16px;
-    color: #333;
+  color: white;
+  font-size: 18px;
 }
 
-.icon:hover {
-    color: #000;
+.icon-text a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
 }
 
-/* Navigation */
-.nav-links {
-    display: flex;
-    justify-content: center;
-    gap: 25px;
-    padding-top: 12px;
+.icon-text a:hover {
+  color: #222;
 }
 
-.nav-links a {
-    text-decoration: none;
-    color: #444;
-    font-size: 15px;
-    gap: 20px;
-    transition: color 0.3s ease, transform 0.2s ease;
-    font-weight: 500;
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
 }
 
-.nav-links a:hover {
-    color: #000;
-    transform: scale(1.05);
-
-}
-
-.nav-links a:hover::after {
-    width: 100%;
-}
-
+/* Responsive Design */
 @media (max-width: 768px) {
-    .header {
-        padding: 10px 20px;
-    }
+  .menu-toggle {
+    display: block;
+  }
 
-    .header-top {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
+  .header-icons {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    width: 200px;
+    flex-direction: column;
+    padding: 15px;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+  }
 
-    .nav-links {
-        flex-wrap: wrap;
-        gap: 15px;
-    }
+  .header-icons.open {
+    transform: translateX(0);
+  }
+
+  .icon-text a {
+    color: #222;
+  }
+
+  .icon {
+    color: #222;
+  }
 }

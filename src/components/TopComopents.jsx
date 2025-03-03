@@ -1,9 +1,11 @@
-import React from "react";
-import { FaUser, FaShoppingBag, FaInfoCircle, FaBoxOpen, FaCogs, FaPhone } from "react-icons/fa";
-import "../css/header.css"; 
-import logo from "../assets/logo.jpeg"; 
+import React, { useState } from "react";
+import { FaUser, FaInfoCircle, FaBoxOpen, FaCogs, FaBars, FaTimes } from "react-icons/fa";
+import "../css/header.css";
+import logo from "../assets/logo.jpeg";
 
 const TopComponents = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <header className="header">
       <div className="header-top">
@@ -12,7 +14,12 @@ const TopComponents = () => {
           <h1 className="logo-text">Lovely-Garments</h1>
         </div>
 
-        <div className="header-icons">
+        {/* Mobile Menu Toggle */}
+        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
+        <nav className={`header-icons ${menuOpen ? "open" : ""}`}>
           <div className="icon-text">
             <FaUser className="icon" />
             <a href="/">Home</a>
@@ -29,11 +36,7 @@ const TopComponents = () => {
             <FaCogs className="icon" />
             <a href="/about">Services</a>
           </div>
-          {/* <div className="icon-text">
-            <FaPhone className="icon" />
-            <a href="/contact">Contact</a>
-          </div> */}
-        </div>
+        </nav>
       </div>
     </header>
   );

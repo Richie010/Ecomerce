@@ -1,35 +1,190 @@
-    .shadow-lg {
-    height: 350px;
-    width: 350px;
+/* ===== General Styling ===== */
+.shadow-lg {
+  height: 350px;
+  width: 350px;
 }
+
+/* ===== About Section Layout ===== */
 .about-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    .about-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Add Hover Effect */
+.about-item:hover {
+  transform: scale(1.03);
+}
+
+/* Desktop Layout */
+@media (min-width: 768px) {
+  .about-item {
       flex-direction: row;
-    }
+      justify-content: space-between;
   }
-  
+
+  /* Alternate Image Position */
+  .about-item:nth-child(even) {
+      flex-direction: row-reverse;
+  }
+}
+
+/* ===== Image Styling ===== */
+.about-image img {
+  width: 280px;
+  height: 280px;
+  border-radius: 12px;
+  object-fit: cover;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Image Hover Effect */
+.about-image img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Text Section Styling ===== */
+.about-text {
+  flex: 1;
+  padding: 20px;
+  background: #ffffff;
+  border-left: 5px solid #007bff;
+  border-radius: 12px;
+  box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Add Hover Effect */
+.about-text:hover {
+  box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Title Styling ===== */
+.about-text h3 {
+  font-size: 22px;
+  font-weight: bold;
+  color: #333;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+/* ===== Description Styling ===== */
+.about-text p {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* ===== WhatsApp Floating Button ===== */
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  animation: float 2s infinite ease-in-out;
+}
+
+.whatsapp-icon a {
+  color: #25D366;
+  font-size: 45px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.whatsapp-icon a:hover {
+  transform: scale(1.2);
+}
+
+/* Floating Animation */
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+  100% { transform: translateY(0); }
+}
+
+/* ===== Responsive Design ===== */
+
+/* 🔹 Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
   .about-image img {
-    width: 250px;
-    height: 250px;
-    border-radius: 8px;
-    object-fit: cover;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+      width: 250px;
+      height: 250px;
   }
-  
+
   .about-text {
-    flex: 1;
-    padding: 20px;
-    background: #f9f9f9;
-    border-left: 10px solid #007bff;
-    border-radius: 80px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+      padding: 15px;
   }
-  
+
+  .about-text h3 {
+      font-size: 20px;
+  }
+
+  .about-text p {
+      font-size: 15px;
+  }
+}
+
+/* 🔹 Mobile Devices (max-width: 768px) */
+@media (max-width: 768px) {
+  .about-item {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .about-image img {
+      width: 100%;
+      max-width: 320px;
+      height: auto;
+  }
+
+  .about-text {
+      width: 100%;
+      border-left: none;
+      border-top: 5px solid #007bff;
+      padding: 20px;
+  }
+
+  .about-text h3 {
+      font-size: 18px;
+  }
+
+  .about-text p {
+      font-size: 14px;
+  }
+
+  .whatsapp-icon a {
+      font-size: 40px;
+  }
+}
+
+/* 🔹 Small Mobile Devices (max-width: 480px) */
+@media (max-width: 480px) {
+  .about-image img {
+      max-width: 280px;
+  }
+
+  .about-text {
+      padding: 15px;
+  }
+
+  .about-text h3 {
+      font-size: 16px;
+  }
+
+  .about-text p {
+      font-size: 13px;
+  }
+
+  .whatsapp-icon {
+      bottom: 15px;
+      right: 15px;
+  }
+
+  .whatsapp-icon a {
+      font-size: 35px;
+  }
+}

@@ -1,155 +1,235 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap');
+
 /* General Styles */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
-    width: 100%;
-    
-   
     background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Preloader */
-#preloader-active {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.9);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 9999;
+/* Main Container */
+.main-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: auto;
 }
 
-.preloader-inner {
-    width: 80px;
-    height: 80px;
-    border: 5px solid #333;
-    border-radius: 50%;
-    border-top: 5px solid transparent;
-    animation: spin 1s linear infinite;
+/* Section Title */
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-}
-
-/* Header */
-.header-area {
-    background-color: #222;
-    padding: 15px 0;
-    position: sticky;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-.logo img {
-    max-width: 120px;
-}
-
-.main-menu ul {
-    list-style: none;
-    display: flex;
-    gap: 20px;
-}
-
-.main-menu ul li a {
-    color: #fff;
-    text-decoration: none;
+.section-title h2 {
+    font-size: 2.2rem;
     font-weight: 600;
-    transition: color 0.3s;
+    color: #2c3e50;
+    margin-bottom: 15px;
 }
 
-.main-menu ul li a:hover {
-    color: #ff7b00;
+.section-title p {
+    font-size: 1.1rem;
+    color: #666;
 }
 
-/* Hero Section */
-.slider-area {
-    background-size: cover;
-    background-position: center;
-    text-align: left;
-    color: white;
-    padding: 100px 0;
+/* Service Offerings Grid */
+.offers-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
 }
 
-.hero-caption h2 {
-    font-size: 48px;
-    font-weight: 700;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.hero-caption img {
-    max-width: 80px;
-}
-
-/* Offers Section */
-.clients-area {
-    background-color: #fff;
-    padding: 60px 0;
-}
-
+/* Service Offerings Card */
 .single-offers {
-    text-align: center;
-    background: #f5f5f5;
-    padding: 50px;
-    border-radius: 10px;
-    transition: all 0.3s ease;
-}
-
-.single-offers:hover {
-    transform: translateY(-10px);
-    background: #8561b0;
-    color: white;
-}
-
-.single-offers img {
-    max-width: 100px;
-    margin-bottom: 20px;
-}
-
-/* Services Section */
-.categories-area {
-    background: #fafafa;
-    padding: 80px 0;
-}
-
-.single-cat {
-    text-align: center;
     background: #fff;
     padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
-.single-cat:hover {
-    transform: scale(1.05);
-}
-
-.cat-icon img {
+/* Fix Image Positioning */
+.single-offers img {
     max-width: 80px;
+    height: auto;
+    margin: 10px auto 15px;
+    display: block;
 }
 
-/* Video Section */
-.video-area {
-    background-size: cover;
-    padding: 100px 0;
+/* Hover Effect */
+.single-offers:hover {
+    transform: scale(1.05);
+    background: #3498db;
+    color: #fff;
+}
+
+.single-offers:hover img {
+    filter: brightness(0.9);
+}
+
+/* Text Styling Inside Card */
+.offers-cap {
     text-align: center;
 }
 
-.video-icon a {
-    font-size: 50px;
-    color: white;
-    background: #ff7b00;
-    border-radius: 50%;
-    padding: 20px;
-    display: inline-block;
-    transition: background 0.3s;
+.offers-cap span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e74c3c;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.video-icon a:hover {
-    background: #222;
+.offers-cap h3 {
+    font-size: 1.6rem;
+    margin-bottom: 10px;
+}
+
+.offers-cap p {
+    font-size: 1rem;
+}
+
+/* Service Categories Grid */
+.categories-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Service Categories Card */
+.single-cat {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effect */
+.single-cat:hover {
+    transform: translateY(-5px);
+    background: #27ae60;
+    color: #fff;
+}
+
+/* Fix Image Positioning Inside Categories */
+.cat-icon img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/* Text Styling Inside Categories */
+.cat-cap h5 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.cat-cap p {
+    font-size: 1rem;
+}
+
+/* WhatsApp Floating Button */
+.whatsapp-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: #25D366;
+    padding: 12px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.whatsapp-icon a {
+    color: #fff;
+    font-size: 40px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1024px) {
+    .main-container {
+        padding: 15px;
+    }
+
+    .offers-container {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 15px;
+    }
+
+    .categories-container {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .section-title p {
+        font-size: 1rem;
+    }
+
+    .single-offers,
+    .single-cat {
+        padding: 20px;
+    }
+
+    .offers-cap h3 {
+        font-size: 1.4rem;
+    }
+
+    .offers-cap p,
+    .cat-cap p {
+        font-size: 0.9rem;
+    }
+
+    .offers-container, .categories-container {
+        grid-template-columns: 1fr;
+    }
+
+    .single-offers img {
+        max-width: 70px;
+    }
+
+    .single-cat img {
+        max-width: 70px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .single-offers {
+        padding: 15px;
+    }
+
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .offers-cap h3 {
+        font-size: 1.3rem;
+    }
+
+    .offers-cap p,
+    .cat-cap p {
+        font-size: 0.85rem;
+    }
 }

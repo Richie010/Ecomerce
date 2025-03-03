@@ -12,21 +12,6 @@ const Header = () => {
     <div className="container-fluid" style={{ backgroundColor: "#f9f9f9", color: "#333" }}>
       <div className="row align-items-center py-5">
         {/* Text Content */}
-        <div className="col-md-6 text-center text-md-start px-5">
-          <h1 className="display-4 fw-bold">Welcome to Our Fashion Store</h1>
-          <p className="lead">
-            Discover exclusive collections from top brands. Explore our latest
-            arrivals and shop in style. From everyday wear to premium fashion,
-            we have something for everyone.
-          </p>
-          <p className="lead">
-            Browse our wide range of clothing, including casual outfits,
-            uniforms, formal suits, and luxury designer wear.
-          </p>
-          <button className="btn btn-warning btn-lg">🛍️ Shop Now</button>
-        </div>
-
-        {/* Moving Image Carousel */}
         <div className="col-md-6">
           <Carousel>
             <Carousel.Item>
@@ -44,6 +29,38 @@ const Header = () => {
            
           </Carousel>
         </div>
+        <div className="col-md-6 text-center text-md-start px-5">
+          <h1 className="display-4 fw-bold">Welcome to Our Fashion Store</h1>
+          <p className="lead">
+            Discover exclusive collections from top brands. Explore our latest
+            arrivals and shop in style. From everyday wear to premium fashion,
+            we have something for everyone.
+          </p>
+          <p className="lead">
+            Browse our wide range of clothing, including casual outfits,
+            uniforms, formal suits, and luxury designer wear.
+          </p>
+          <button className="btn btn-warning btn-lg">🛍️ Shop Now</button>
+        </div>
+
+        {/* Moving Image Carousel */}
+        {/* <div className="col-md-6">
+          <Carousel>
+            <Carousel.Item>
+              <img className="carousel-img" src="../src/assets/fasion3.jpeg" alt="Fashion 1" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="carousel-img" src="../src/assets/fasion2.jpeg" alt="Fashion 2" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="carousel-img" src="../src/assets/fasion5.jpeg" alt="Fashion 3" />
+            </Carousel.Item>
+            <Carousel.Item>
+              <img className="carousel-img" src="../src/assets/fasion4.jpeg" alt="Uniform Collection" />
+            </Carousel.Item>
+           
+          </Carousel>
+        </div> */}
       </div>
       {/* <div className="img-fluid"> */}
       <Carousel>
