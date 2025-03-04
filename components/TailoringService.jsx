@@ -57,12 +57,7 @@ const TailoringService = () => {
                 transform: translateY(-5px);
               }
 
-              .whatsapp-icon {
-                background: #25D366;
-                padding: 10px;
-                border-radius: 50%;
-                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-              }
+              
 
               @keyframes vibrate {
                 0%, 100% { transform: translate(0, 0); }
